@@ -37,7 +37,10 @@ router.beforeEach((to, from, next) => {
   store.commit("SET_BREADCRUMBS", {
     breadcrumbs: to.matched
       .filter((item) => item.meta.breadcrumb)
-      .map((item) => item.meta.breadcrumb),
+      .map((item) => ({
+        title: item.meta.breadcrumb,
+        path: item.path,
+      })),
   });
   next();
 });

@@ -8,8 +8,12 @@
       <el-header><CommonHeader /></el-header>
       <el-main>
         <el-breadcrumb separator="/">
-          <el-breadcrumb-item v-for="item in breadcrumbs" :key="item">
-            {{ item }}
+          <el-breadcrumb-item
+            v-for="item in breadcrumbs"
+            :key="item.title"
+            :to="{ path: item.path }"
+          >
+            {{ item.title }}
           </el-breadcrumb-item>
         </el-breadcrumb>
         <router-view v-slot="{ Component }">
