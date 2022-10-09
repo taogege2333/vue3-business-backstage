@@ -22,19 +22,18 @@ const menu = reactive([
     route: "/",
   },
   {
-    id: "10",
+    id: "100",
     text: "测试",
     route: "/test",
   },
   {
     id: "2",
     text: "产品管理",
-    route: "/2",
     children: [
       {
         id: "2-1",
         text: "产品类表",
-        route: "/2-1",
+        route: "/productManager",
       },
       {
         id: "2-2",
@@ -51,7 +50,6 @@ const menu = reactive([
   {
     id: "3",
     text: "图片管理",
-    route: "/3",
     children: [
       {
         id: "3-1",
@@ -68,7 +66,6 @@ const menu = reactive([
   {
     id: "4",
     text: "交易管理",
-    route: "/4",
     children: [
       {
         id: "4-1",
@@ -105,7 +102,6 @@ const menu = reactive([
   {
     id: "5",
     text: "支付管理",
-    route: "/5",
     children: [
       {
         id: "5-1",
@@ -122,7 +118,6 @@ const menu = reactive([
   {
     id: "6",
     text: "会员管理",
-    route: "/6",
     children: [
       {
         id: "6-1",
@@ -139,7 +134,6 @@ const menu = reactive([
   {
     id: "7",
     text: "店铺管理",
-    route: "/7",
     children: [
       {
         id: "7-1",
@@ -151,7 +145,6 @@ const menu = reactive([
   {
     id: "8",
     text: "文章管理",
-    route: "/8",
     children: [
       {
         id: "8-1",

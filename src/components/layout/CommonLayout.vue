@@ -6,7 +6,7 @@
     </el-aside>
     <el-container>
       <el-header><CommonHeader /></el-header>
-      <el-main>
+      <el-main class="main">
         <el-breadcrumb separator="/">
           <el-breadcrumb-item
             v-for="item in breadcrumbs"
@@ -60,5 +60,9 @@ export default {
 
 .el-header {
   box-shadow: 2px 0 2px 2px #efefef;
+}
+
+.main {
+  height: calc(100vh - 60px);
 }
 </style>

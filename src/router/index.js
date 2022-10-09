@@ -6,14 +6,14 @@ const routes = [
   {
     path: "/",
     redirect: "/home",
+    meta: {
+      breadcrumb: "系统首页",
+    },
     component: CommonLayout,
     children: [
       {
         path: "home",
         name: "Home",
-        meta: {
-          breadcrumb: "系统首页",
-        },
         component: () => import("@/views/Home"),
       },
       {
@@ -23,6 +23,14 @@ const routes = [
           breadcrumb: "测试",
         },
         component: () => import("@/views/Test"),
+      },
+      {
+        path: "productManager",
+        name: "ProductManager",
+        meta: {
+          breadcrumb: "产品类表",
+        },
+        component: () => import("@/views/ProductManager"),
       },
     ],
   },

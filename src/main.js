@@ -7,6 +7,7 @@ import * as ElementPlusIconsVue from "@element-plus/icons-vue";
 import "@/assets/less/reset.less";
 import "@/assets/less/common.less";
 import "@/assets/less/transition.less";
+import "element-plus/theme-chalk/el-message.css";
 
 const app = createApp(App);
 
